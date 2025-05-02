@@ -1,0 +1,85 @@
+ /*--------------------------------------------------------------
+			 # media screen
+			 --------------------------------------------------------------*/
+			
+			 /*Dispositivos extra pequeños (teléfonos, 576px px y menos) */
+             @media only screen and (max-width: 576px) {
+                header{
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 30px;
+                }
+                .contenedor{
+                  width: 98%;
+                  margin: 0 auto;
+              }
+             }	
+ 
+          /*Dispositivos pequeños (tabletas verticales y teléfonos grandes, 576px px y más)*/
+             @media only screen and (min-width: 576px) {
+                header{
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 30px;
+                }
+                .contenedor{
+                  width: 98%;
+                  margin: 0 auto;
+              }
+                          
+             }  
+ 
+          /*Dispositivos medianos (tabletas horizontales, 768 px y más)*/
+             @media only screen and (min-width: 768px) {
+                header{
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 30px;
+                }
+                .contenedor{
+                  width: 98%;
+                  margin: 0 auto;
+              }
+      
+             }
+ 
+          /* Dispositivos grandes (computadoras portátiles/de escritorio, 992 px y más) */
+             @media only screen and (min-width: 992px) {
+                header{
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+                .contenedor{
+                  width: 98%;
+                  margin: 0 auto;
+              }
+       
+             }
+ 
+          /* Dispositivos extragrandes (portátiles y equipos de escritorio grandes, 1200 px y más)*/
+             @media only screen and (min-width: 1200px) {
+               header{
+                  flex-direction: row;
+                  justify-content: space-around;
+                  align-items: center;
+              }
+              .contenedor{
+               width: 98%;
+               margin: 0 auto;
+           }
+             }
+             
+          /* Dispositivos extragrandes (portátiles y equipos de escritorio grandes, 1400px px y más)*/
+             @media only screen and (min-width: 1400px) {
+               header{
+                  flex-direction: row;
+                  justify-content: space-around;
+                  align-items: center;
+              }
+               .contenedor{
+                  width: 1320px;
+                  margin: 0 auto;
+               }
+      
+             }

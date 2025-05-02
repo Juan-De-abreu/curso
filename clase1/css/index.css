@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #ecf0f1;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #34495e;
+}
+header{
+    background-color: #2c3e50;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+}
+header li{
+    list-style: none;
+}
+header ul{
+    display: flex;
+    gap: 20px;
+}
+header nav ul{
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+}
+.menu{
+    font-size: 1.5em;
+    padding: 0.5em;
+    border: #278ed3 0.1em solid;
+    border-radius: 16%;
+    background-color: #2980b9;
+    text-decoration: none;
+    color: #ecf0f1;
+    transition: all 0.2s;
+}
+.menu:hover{
+    background-color: #3498db;
+    box-shadow: 0.25em 0.25em 1em black;
+    border: groove #ecf0f1 0.1em;
+}
+
+.contenedor{
+    width: 1320px;
+    margin: 0 auto;
+}
+.titulo{
+    text-align: center;
+    padding:30px 0 ;
+    font-family:fantasy ;
+    font-size: 2em;
+}
+.contcard{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    border-radius: 5%;
+    border: 0.1em solid rgb(83, 76, 76);
+    transition: all 0.3s ease;
+    background: #46596b;
+    width: 300px;
+    box-shadow: 0.25em 0.25em 1em black ;
+}
+.card p{
+    text-align: center;
+    padding: 20px 0;
+}
+
+.card:hover{
+    box-shadow: 0.2em 0.2em 1em #297fb99f;
+    border: #2980b9 groove 0.1em;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.card img{
+    border-radius: 5% 5% 0 0;
+    width: 100%;
+}
+
+.fondo1{
+    background: #95a5a6;
+}
+
+footer{
+    padding: 10px 40px;
+    margin-top:40px ;
+    height: 150px;
+    background-color: #2c3e50;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div{
+    height: 100%;
+    width: 300px;
+    font-size: 1.4em;
+    padding-top : 10px;
+}
+
+.main2{
+    transition: all ease 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu2{
+    text-decoration: underline;
+}
+
+.menu2:hover{
+    color: #3498db;
+}
+.redes{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.redes a i{
+    font-size: 1.5em;
+}
+.descargas{
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+}
+.descargas img{
+    height: 30px;
+}
+section{
+    padding: 50px 0;
+}

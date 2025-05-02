@@ -1,0 +1,21 @@
+.bg-menu{
+    background: #34495e;
+}
+.bg-claro{
+    background: #0d2741; 
+}
+.nav-link:hover{
+    transform: scale(1.1);
+    color: white;
+}
+.navbar,section{
+    border-bottom: rgb(2, 19, 247) 0.5px solid;
+}
+.fondo{
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    border: solid 0.1em rgba(2, 2, 105, 0.3);
+}
+.card{
+    background-color: #0d274136;
+}
