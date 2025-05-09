@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>galetia</title>
+    <link rel="stylesheet" href="vendor/boxicons/css/boxicons.min.css" />
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-bs-theme="dark">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-menu p-4">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-1" href="#"
+            ><img src="img/logoipsum-291.svg" alt="logoipsum" width="100"
+          /></a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fs-4">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Inicio</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="galeria.html">galeria</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  productos
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="grasas.html">Grasas</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="filtros.html">Filtros</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="aceite.html">Aceite</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="frenos.html">Frenos</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Lineas
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">linea1</a></li>
+                  <li><a class="dropdown-item" href="#">linea2</a></li>
+                  <li><a class="dropdown-item" href="#">linea3</a></li>
+                  <li><a class="dropdown-item" href="#">line4</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a href="contacto.html" class="nav-link">contacto</a>
+              </li>
+            </ul>
+            <div>
+              <a
+                href=""
+                class="btn nav-link bx bxs-cart-add fs-1 mx-2"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#comprascanva"
+              ></a>
+            </div>
+            <div class="d-flex fs-1 text-danger">
+              <a href="https://www.instagram.com/">
+                <i class="bx bxl-instagram me-1 text-danger"></i>
+              </a>
+
+              <a href="#">
+                <i class="bx bxl-discord me-1"></i>
+              </a>
+
+              <a href="#">
+                <i class="bx bxl-telegram me-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h4 class="text-center py-3 fw-bold text-white">Galeria</h4>
+
+      <section>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+                <div class="card-header p-0">
+                  <img src="img/peliculas/1.jpg" class="w-100" alt="" />
+                </div>
+                <div class="card-body text-center">
+                  <h4 class="fs-7">titulo de la pelicula/elemento</h4>
+                  <p class="badge bg-danger rounded-pill fs-5">precio:5$</p>
+                  <p class="fs-5">
+                    entradas disponibles:<span class="fw-bold">10</span>
+                  </p>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="#" class="btn btn-primary w-30">Comprar</a>
+                  <a
+                    href="#"
+                    class="btn btn-danger w-30"
+                    data-bs-toggle="modal"
+                    data-bs-target="#detalle1"
+                    >Detalles</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+                <div class="card-header p-0">
+                  <img src="img/peliculas/1.jpg" class="w-100" alt="" />
+                </div>
+                <div class="card-body text-center">
+                  <h4 class="fs-7">titulo de la pelicula/elemento</h4>
+                  <p class="badge bg-danger rounded-pill fs-5">precio:5$</p>
+                  <p class="fs-5">
+                    entradas disponibles:<span class="fw-bold">10</span>
+                  </p>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="#" class="btn btn-primary w-30">Comprar</a>
+                  <a href="#" class="btn btn-danger w-30">Detalles</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+                <div class="card-header p-0">
+                  <img src="img/peliculas/1.jpg" class="w-100" alt="" />
+                </div>
+                <div class="card-body text-center">
+                  <h4 class="fs-7">titulo de la pelicula/elemento</h4>
+                  <p class="badge bg-danger rounded-pill fs-5">precio:5$</p>
+                  <p class="fs-5">
+                    entradas disponibles:<span class="fw-bold">10</span>
+                  </p>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="#" class="btn btn-primary w-30">Comprar</a>
+                  <a href="#" class="btn btn-danger w-30">Detalles</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+                <div class="card-header p-0">
+                  <img src="img/peliculas/1.jpg" class="w-100" alt="" />
+                </div>
+                <div class="card-body text-center">
+                  <h4 class="fs-7">titulo de la pelicula/elemento</h4>
+                  <p class="badge bg-danger rounded-pill fs-5">precio:5$</p>
+                  <p class="fs-5">
+                    entradas disponibles:<span class="fw-bold">10</span>
+                  </p>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="#" class="btn btn-primary w-30">Comprar</a>
+                  <a href="#" class="btn btn-danger w-30">Detalles</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+                <div class="card-header p-0">
+                  <img src="img/peliculas/1.jpg" class="w-100" alt="" />
+                </div>
+                <div class="card-body text-center">
+                  <h4 class="fs-7">titulo de la pelicula/elemento</h4>
+                  <p class="badge bg-danger rounded-pill fs-5">precio:5$</p>
+                  <p class="fs-5">
+                    entradas disponibles:<span class="fw-bold">10</span>
+                  </p>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="#" class="btn btn-primary w-30">Comprar</a>
+                  <a href="#" class="btn btn-danger w-30">Detalles</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+                <div class="card-header p-0">
+                  <img src="img/peliculas/1.jpg" class="w-100" alt="" />
+                </div>
+                <div class="card-body text-center">
+                  <h4 class="fs-7">titulo de la pelicula/elemento</h4>
+                  <p class="badge bg-danger rounded-pill fs-5">precio:5$</p>
+                  <p class="fs-5">
+                    entradas disponibles:<span class="fw-bold">10</span>
+                  </p>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="#" class="btn btn-primary w-30">Comprar</a>
+                  <a href="#" class="btn btn-danger w-30">Detalles</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+                <div class="card-header p-0">
+                  <img src="img/peliculas/1.jpg" class="w-100" alt="" />
+                </div>
+                <div class="card-body text-center">
+                  <h4 class="fs-7">titulo de la pelicula/elemento</h4>
+                  <p class="badge bg-danger rounded-pill fs-5">precio:5$</p>
+                  <p class="fs-5">
+                    entradas disponibles:<span class="fw-bold">10</span>
+                  </p>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="#" class="btn btn-primary w-30">Comprar</a>
+                  <a href="#" class="btn btn-danger w-30">Detalles</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+                <div class="card-header p-0">
+                  <img src="img/peliculas/1.jpg" class="w-100" alt="" />
+                </div>
+                <div class="card-body text-center">
+                  <h4 class="fs-7">titulo de la pelicula/elemento</h4>
+                  <p class="badge bg-danger rounded-pill fs-5">precio:5$</p>
+                  <p class="fs-5">
+                    entradas disponibles:<span class="fw-bold">10</span>
+                  </p>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="#" class="btn btn-primary w-30">Comprar</a>
+                  <a href="#" class="btn btn-danger w-30">Detalles</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+                <div class="card-header p-0">
+                  <img src="img/peliculas/1.jpg" class="w-100" alt="" />
+                </div>
+                <div class="card-body text-center">
+                  <h4 class="fs-7">titulo de la pelicula/elemento</h4>
+                  <p class="badge bg-danger rounded-pill fs-5">precio:5$</p>
+                  <p class="fs-5">
+                    entradas disponibles:<span class="fw-bold">10</span>
+                  </p>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="#" class="btn btn-primary w-30">Comprar</a>
+                  <a href="#" class="btn btn-danger w-30">Detalles</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+                <div class="card-header p-0">
+                  <img src="img/peliculas/1.jpg" class="w-100" alt="" />
+                </div>
+                <div class="card-body text-center">
+                  <h4 class="fs-7">titulo de la pelicula/elemento</h4>
+                  <p class="badge bg-danger rounded-pill fs-5">precio:5$</p>
+                  <p class="fs-5">
+                    entradas disponibles:<span class="fw-bold">10</span>
+                  </p>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="#" class="btn btn-primary w-30">Comprar</a>
+                  <a href="#" class="btn btn-danger w-30">Detalles</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-light-subtle py-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+                <div class="card-header p-0">
+                  <img src="img/peliculas/1.jpg" class="w-100" alt="" />
+                </div>
+                <div class="card-body text-center">
+                  <h4 class="fs-7">titulo de la pelicula/elemento</h4>
+                  <p class="badge bg-danger rounded-pill fs-5">precio:5$</p>
+                  <p class="fs-5">
+                    entradas disponibles:<span class="fw-bold">10</span>
+                  </p>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="#" class="btn btn-primary w-30">Comprar</a>
+                  <a href="#" class="btn btn-danger w-30">Detalles</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+                <div class="card-header p-0">
+                  <img src="img/peliculas/1.jpg" class="w-100" alt="" />
+                </div>
+                <div class="card-body text-center">
+                  <h4 class="fs-7">titulo de la pelicula/elemento</h4>
+                  <p class="badge bg-danger rounded-pill fs-5">precio:5$</p>
+                  <p class="fs-5">
+                    entradas disponibles:<span class="fw-bold">10</span>
+                  </p>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="#" class="btn btn-primary w-30">Comprar</a>
+                  <a href="#" class="btn btn-danger w-30">Detalles</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+                <div class="card-header p-0">
+                  <img src="img/peliculas/1.jpg" class="w-100" alt="" />
+                </div>
+                <div class="card-body text-center">
+                  <h4 class="fs-7">titulo de la pelicula/elemento</h4>
+                  <p class="badge bg-danger rounded-pill fs-5">precio:5$</p>
+                  <p class="fs-5">
+                    entradas disponibles:<span class="fw-bold">10</span>
+                  </p>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="#" class="btn btn-primary w-30">Comprar</a>
+                  <a href="#" class="btn btn-danger w-30">Detalles</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+                <div class="card-header p-0">
+                  <img src="img/peliculas/1.jpg" class="w-100" alt="" />
+                </div>
+                <div class="card-body text-center">
+                  <h4 class="fs-7">titulo de la pelicula/elemento</h4>
+                  <p class="badge bg-danger rounded-pill fs-5">precio:5$</p>
+                  <p class="fs-5">
+                    entradas disponibles:<span class="fw-bold">10</span>
+                  </p>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="#" class="btn btn-primary w-30">Comprar</a>
+                  <a href="#" class="btn btn-danger w-30">Detalles</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+                <div class="card-header p-0">
+                  <img src="img/peliculas/1.jpg" class="w-100" alt="" />
+                </div>
+                <div class="card-body text-center">
+                  <h4 class="fs-7">titulo de la pelicula/elemento</h4>
+                  <p class="badge bg-danger rounded-pill fs-5">precio:5$</p>
+                  <p class="fs-5">
+                    entradas disponibles:<span class="fw-bold">10</span>
+                  </p>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="#" class="btn btn-primary w-30">Comprar</a>
+                  <a href="#" class="btn btn-danger w-30">Detalles</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+                <div class="card-header p-0">
+                  <img src="img/peliculas/1.jpg" class="w-100" alt="" />
+                </div>
+                <div class="card-body text-center">
+                  <h4 class="fs-7">titulo de la pelicula/elemento</h4>
+                  <p class="badge bg-danger rounded-pill fs-5">precio:5$</p>
+                  <p class="fs-5">
+                    entradas disponibles:<span class="fw-bold">10</span>
+                  </p>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="#" class="btn btn-primary w-30">Comprar</a>
+                  <a href="#" class="btn btn-danger w-30">Detalles</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+                <div class="card-header p-0">
+                  <img src="img/peliculas/1.jpg" class="w-100" alt="" />
+                </div>
+                <div class="card-body text-center">
+                  <h4 class="fs-7">titulo de la pelicula/elemento</h4>
+                  <p class="badge bg-danger rounded-pill fs-5">precio:5$</p>
+                  <p class="fs-5">
+                    entradas disponibles:<span class="fw-bold">10</span>
+                  </p>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="#" class="btn btn-primary w-30">Comprar</a>
+                  <a href="#" class="btn btn-danger w-30">Detalles</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+                <div class="card-header p-0">
+                  <img src="img/peliculas/1.jpg" class="w-100" alt="" />
+                </div>
+                <div class="card-body text-center">
+                  <h4 class="fs-7">titulo de la pelicula/elemento</h4>
+                  <p class="badge bg-danger rounded-pill fs-5">precio:5$</p>
+                  <p class="fs-5">
+                    entradas disponibles:<span class="fw-bold">10</span>
+                  </p>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="#" class="btn btn-primary w-30">Comprar</a>
+                  <a href="#" class="btn btn-danger w-30">Detalles</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+                <div class="card-header p-0">
+                  <img src="img/peliculas/1.jpg" class="w-100" alt="" />
+                </div>
+                <div class="card-body text-center">
+                  <h4 class="fs-7">titulo de la pelicula/elemento</h4>
+                  <p class="badge bg-danger rounded-pill fs-5">precio:5$</p>
+                  <p class="fs-5">
+                    entradas disponibles:<span class="fw-bold">10</span>
+                  </p>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="#" class="btn btn-primary w-30">Comprar</a>
+                  <a href="#" class="btn btn-danger w-30">Detalles</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100">
+                <div class="card-header p-0">
+                  <img src="img/peliculas/1.jpg" class="w-100" alt="" />
+                </div>
+                <div class="card-body text-center">
+                  <h4 class="fs-7">titulo de la pelicula/elemento</h4>
+                  <p class="badge bg-danger rounded-pill fs-5">precio:5$</p>
+                  <p class="fs-5">
+                    entradas disponibles:<span class="fw-bold">10</span>
+                  </p>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="#" class="btn btn-primary w-30">Comprar</a>
+                  <a href="#" class="btn btn-danger w-30">Detalles</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="detalle1"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Detalles de la pelicula
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <img src="img/peliculas/1.jpg" class="img-fluid" alt="" />
+                </div>
+                <div class="col-md-6 text-center">
+                  <h4 class="text-decoration-underline">
+                    titulo de la pelicula/elemento
+                  </h4>
+
+                  <p class="fs-5">
+                    entradas disponibles:<span class="fw-bold">10</span>
+                  </p>
+                  <p class="badge bg-danger rounded-pill fs-5">precio:5$</p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consectetur, aliquid eius. Dolores voluptatibus temporibus
+                    ad minus tenetur suscipit animi quisquam adipisci doloremque
+                    quo aliquam harum assumenda, obcaecati quibusdam consectetur
+                    recusandae!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- offcanva -->
+
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="comprascanva"
+        aria-labelledby="offcanvasRightLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title bx bxs-cart" id="offcanvasRightLabel">
+            Todas las compras
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="card mb-4">
+            <div class="card-header p-0">
+              <img src="img/peliculas/1.jpg" class="w-100" alt="" />
+            </div>
+            <div class="card-body text-center">
+              <h4 class="fs-7">titulo de la pelicula/elemento</h4>
+              <p class="badge bg-danger rounded-pill fs-5">precio:5$</p>
+              <p class="fs-5">
+                entradas disponibles:<span class="fw-bold">10</span>
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="#" class="btn btn-danger w-30">Quitar del <i class='bx bxs-cart'></i></a>
+            </div>
+          </div>
+
+                    <div class="card mb-4">
+            <div class="card-header p-0">
+              <img src="img/peliculas/1.jpg" class="w-100" alt="" />
+            </div>
+            <div class="card-body text-center">
+              <h4 class="fs-7">titulo de la pelicula/elemento</h4>
+              <p class="badge bg-danger rounded-pill fs-5">precio:5$</p>
+              <p class="fs-5">
+                entradas disponibles:<span class="fw-bold">10</span>
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="#" class="btn btn-danger w-30">Quitar del <i class='bx bxs-cart'></i></a>
+            </div>
+          </div>
+
+                    <div class="card mb-4">
+            <div class="card-header p-0">
+              <img src="img/peliculas/1.jpg" class="w-100" alt="" />
+            </div>
+            <div class="card-body text-center">
+              <h4 class="fs-7">titulo de la pelicula/elemento</h4>
+              <p class="badge bg-danger rounded-pill fs-5">precio:5$</p>
+              <p class="fs-5">
+                entradas disponibles:<span class="fw-bold">10</span>
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="#" class="btn btn-danger w-30">Quitar del <i class='bx bxs-cart'></i></a>
+            </div>
+          </div>
+
+                    <div class="card mb-4">
+            <div class="card-header p-0">
+              <img src="img/peliculas/1.jpg" class="w-100" alt="" />
+            </div>
+            <div class="card-body text-center">
+              <h4 class="fs-7">titulo de la pelicula/elemento</h4>
+              <p class="badge bg-danger rounded-pill fs-5">precio:5$</p>
+              <p class="fs-5">
+                entradas disponibles:<span class="fw-bold">10</span>
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="#" class="btn btn-danger w-30">Quitar del <i class='bx bxs-cart'></i></a>
+            </div>
+          </div>
+
+                    <div class="card mb-4">
+            <div class="card-header p-0">
+              <img src="img/peliculas/1.jpg" class="w-100" alt="" />
+            </div>
+            <div class="card-body text-center">
+              <h4 class="fs-7">titulo de la pelicula/elemento</h4>
+              <p class="badge bg-danger rounded-pill fs-5">precio:5$</p>
+              <p class="fs-5">
+                entradas disponibles:<span class="fw-bold">10</span>
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="#" class="btn btn-danger w-30">Quitar del <i class='bx bxs-cart'></i></a>
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>
+    </main>
+
+    <footer class="py-3 bg-black">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-body-secondary">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-body-secondary">Features</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-body-secondary">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-body-secondary">FAQs</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-body-secondary">About</a>
+        </li>
+      </ul>
+      <p class="text-center text-body-secondary">© 2025 Company, Inc</p>
+    </footer>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
