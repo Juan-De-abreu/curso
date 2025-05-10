@@ -1,11 +1,37 @@
-body{
-    background: #f8c291;
+*{
+font-family: "Tagesschrift", system-ui;
+font-weight: 400;
+font-style: normal;
+scroll-behavior: smooth;
 }
+
+.bordelatde{
+    border-right: 1px solid black;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 68px;
+    z-index: 1000; /* Evita que otros elementos lo cubran */
+}
+
+body{
+    padding-top: 68px;
+    background: #ffca7c;
+}
+@media (max-width: 768px) {
+    body {
+        padding-top: 100px; /* Ajusta según el tamaño del header en pantallas pequeñas */
+    }
+}
+
 .bg-principal{
-    background: #fa983a;
+    background: #F79F1F;
 }
 .bg-segundario{
-    background: #f8c291;
+    background: #ffca7c;
 }
 .separacion{
     border-bottom: black solid 1px;
@@ -14,11 +40,7 @@ section{
     box-shadow: 0.1em 0.1em 1em black;
 }
 .btn{
-    transition: all ease 0.3s;
-}
-.btn:hover{
-    transform: scale(1.1);
-    box-shadow: 3px 3px 15px black;
+    transition: all ease 0.25s;
 }
 .nav-item{
     text-align: center;
@@ -27,25 +49,46 @@ section{
     border: solid #86511f00 1px;
     margin-right: 20px;
 }
-.segundonav{
-    background-color: #f8c291;
-}
-.nav-item:hover{
-    border-radius:5%;
-    border: solid #86511f 1px;
-    box-shadow: #86511f 3px 3px 5px;
-}
 .bg-transparente{
     background: rgba(0, 0, 0, 0.35);
     border-radius: 10px;
     border: solid rgba(0, 0, 0, 0.61) 1px;
 }
 .w-85{
-    width:87%;
+    width:85%;
 }
 .w-10{
-    width: 13%;
+    width: 15%;
 }
 .card{
-    border: 1px solid rgb(165, 161, 161);
+    transition: all ease 0.25s;
+    border: 1px solid rgba(0, 0, 0, 0.596);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.imgnav{
+    border-radius: 100%;
+    height: 90%;
+    width: 90%;
+    border: black solid 1px;
+    box-shadow: #86511f9d 3px 3px 10px;
+}
+.nav-item:hover,.card:hover,.btn:hover{
+    border-radius:5%;
+    border: solid #86511f 1px;
+    box-shadow: #86511f9d 3px 3px 5px;
+}
+.card:hover,.btn:hover{
+    transform: scale(1.05);
+}
+.decorartexto:hover{
+    text-decoration: underline;
+    background: rgba(175, 169, 169, 0.541);
+    border: 1px solid rgba(0, 0, 0, 0.377);
+}
+.decorartexto{
+    transition: all ease 0.2s;
 }

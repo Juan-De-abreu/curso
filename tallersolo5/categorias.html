@@ -7,10 +7,13 @@
     <title>Categorias</title>
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
+    <header class="fs-5">
         <nav class="navbar navbar-expand-lg bg-principal separacion">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><img src="img/logo-small.png" alt=""></a>
@@ -33,13 +36,35 @@
                                 Categorias
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="categorias.html">Carne de res</a></li>
-                                <li><a class="dropdown-item" href="categorias.html">Desayuno</a></li>
-                                <li><a class="dropdown-item" href="categorias.html">Pollo</a></li>
-                                <li><a class="dropdown-item" href="categorias.html">Postre</a></li>
-                                <li><a class="dropdown-item" href="categorias.html">Cabra</a></li>
-                                <li><a class="dropdown-item" href="categorias.html">Cordero</a></li>
-                                <li><a class="dropdown-item" href="categorias.html">Misceláneos</a></li>
+                                <li><a class="dropdown-item decorartexto" href="categorias.html#carnederes">Carne de res
+                                    </a></li>
+                                <li>
+                                    <hr>
+                                </li>
+                                <li><a class="dropdown-item decorartexto" href="categorias.html#desayunos">Desayuno</a>
+                                </li>
+                                <li>
+                                    <hr>
+                                </li>
+                                <li><a class="dropdown-item decorartexto" href="categorias.html#pollos">Pollo</a></li>
+                                <li>
+                                    <hr>
+                                </li>
+                                <li><a class="dropdown-item decorartexto" href="categorias.html#postres">Postre</a></li>
+                                <li>
+                                    <hr>
+                                </li>
+                                <li><a class="dropdown-item decorartexto" href="categorias.html#cabra">Cabra</a></li>
+                                <li>
+                                    <hr>
+                                </li>
+                                <li><a class="dropdown-item decorartexto" href="categorias.html#cordero">Cordero</a>
+                                </li>
+                                <li>
+                                    <hr>
+                                </li>
+                                <li><a class="dropdown-item decorartexto"
+                                        href="categorias.html#miscelaneos">Misceláneos</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -52,23 +77,90 @@
         </nav>
     </header>
     <main>
-        <section>
-            <div class="row justify-content-between">
-                <div class="col-2 w-10 segundonav">
-                    <ul class="text-decoration-none fs-4 p-0">
-                        <li class="mb-4"><a href="">1</a></li>
-                        <li class="mb-4"><a href="">2</a></li>
-                        <li class="mb-4"><a href="">3</a></li>
-                        <li class="mb-4"><a href="">4</a></li>
-                        <li class="mb-4"><a href="">5</a></li>
-                        <li class="mb-4"><a href="">6</a></li>
-                    </ul>
-                </div>
-                <div class="col-2 bg-danger w-85">
+        <!-- esto es la division de pantalla en dos partes -->
+        <div class="row m-0">
+            <!-- division izquierda -->
+            <div class="col-2 w-10 bg-principal d-none d-lg-block bordelatde p-1">
+                <h4>Categorias</h4>
+                <ul class="fs-4 p-0">
+                    <li class="card my-4 mx-0"><a href="#carnederes">
+                            <div class="row p-0 m-0 bg-segundario">
+                                <div class="col-6 "><img class="img-fluid imgnav" src="img/categorias/carnes.jpg"
+                                        alt=""></div>
+                                <div class="col-6">
+                                    <p class="fs-5">Carnes de res</p>
+                                </div>
+                            </div>
+                        </a></li>
+                    <li class="card my-4 mx-0"><a href="#desayunos">
+                            <div class="row p-0 m-0 bg-segundario">
+                                <div class="col-6 "><img class="img-fluid imgnav" src="img/categorias/desayuno1.png"
+                                        alt=""></div>
+                                <div class="col-6">
+                                    <p class="fs-5">Desayunos</p>
+                                </div>
+                            </div>
+                        </a></li>
+                    <li class="card my-4 mx-0"><a href="#pollos">
+                            <div class="row p-0 m-0 bg-segundario">
+                                <div class="col-6 "><img class="img-fluid imgnav" src="img/categorias/pollo.jpg" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <p class="fs-5">Pollos</p>
+                                </div>
+                            </div>
+                        </a></li>
+                    <li class="card my-4 mx-0"><a href="#postres">
+                            <div class="row p-0 m-0 bg-segundario">
+                                <div class="col-6 "><img class="img-fluid imgnav" src="img/categorias/postre01.jpg"
+                                        alt=""></div>
+                                <div class="col-6">
+                                    <p class="fs-5">Postres</p>
+                                </div>
+                            </div>
+                        </a></li>
+
+                    <li class="card my-4 mx-0"><a href="#cabra">
+                            <div class="row p-0 m-0 bg-segundario">
+                                <div class="col-6 "><img class="img-fluid imgnav" src="img/categorias/goat.png" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <p class="fs-5">Cabra</p>
+                                </div>
+                            </div>
+                        </a></li>
+
+                    <li class="card my-4 mx-0"><a href="#cordero">
+                            <div class="row p-0 m-0 bg-segundario">
+                                <div class="col-6 "><img class="img-fluid imgnav" src="img/categorias/lamb.png" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <p class="fs-5">Cordero</p>
+                                </div>
+                            </div>
+                        </a></li>
+
+                    <li class="card my-4 mx-0"><a href="#miscelaneos">
+                            <div class="row p-0 m-0 bg-segundario">
+                                <div class="col-6 "><img class="img-fluid imgnav" src="img/categorias/miscellaneous.png"
+                                        alt=""></div>
+                                <div class="col-6">
+                                    <p class="fs-5">Misceláneos</p>
+                                </div>
+                            </div>
+                        </a></li>
+
+                </ul>
+            </div>
+            <!-- division derecha y dentro van todas las section -->
+            <div class="col-2 col-sm-12 w-85 m-auto p-0">
+
+                <section class="m-0 p-0 pb-3" id="carnederes">
+                    <h4 class="text-center pt-3 fs-2 text-decoration-underline separacion">Carne de Res</h4>
                     <div class="container">
                         <div class="row justify-content-center">
-                            <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
-                                <div class="card mb-3">
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
                                     <div class="card-header p-0">
                                         <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
                                     </div>
@@ -77,28 +169,28 @@
                                         <p>Descricion breve de alimentos a usar</p>
                                     </div>
                                     <div class="card-footer text-center">
-                                        <a href="" class="btn btn-primary fs-5">Pasos a seguir</a>
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
-                                <div class="card mb-3">
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
                                     <div class="card-header p-0">
                                         <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
                                     </div>
                                     <div class="card-body">
                                         <h4>Nombre de la receta</h4>
-                                        <p>Descricion breve de alimentos a usar</p>
+                                        <p></p>
                                     </div>
                                     <div class="card-footer text-center">
-                                        <a href="" class="btn btn-primary fs-5">Pasos a seguir</a>
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
-                                <div class="card mb-3">
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
                                     <div class="card-header p-0">
                                         <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
                                     </div>
@@ -107,13 +199,13 @@
                                         <p>Descricion breve de alimentos a usar</p>
                                     </div>
                                     <div class="card-footer text-center">
-                                        <a href="" class="btn btn-primary fs-5">Pasos a seguir</a>
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
-                                <div class="card mb-3">
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
                                     <div class="card-header p-0">
                                         <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
                                     </div>
@@ -122,13 +214,13 @@
                                         <p>Descricion breve de alimentos a usar</p>
                                     </div>
                                     <div class="card-footer text-center">
-                                        <a href="" class="btn btn-primary fs-5">Pasos a seguir</a>
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
-                                <div class="card mb-3">
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
                                     <div class="card-header p-0">
                                         <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
                                     </div>
@@ -137,13 +229,13 @@
                                         <p>Descricion breve de alimentos a usar</p>
                                     </div>
                                     <div class="card-footer text-center">
-                                        <a href="" class="btn btn-primary fs-5">Pasos a seguir</a>
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
-                                <div class="card mb-3">
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
                                     <div class="card-header p-0">
                                         <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
                                     </div>
@@ -152,13 +244,13 @@
                                         <p>Descricion breve de alimentos a usar</p>
                                     </div>
                                     <div class="card-footer text-center">
-                                        <a href="" class="btn btn-primary fs-5">Pasos a seguir</a>
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
-                                <div class="card mb-3">
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
                                     <div class="card-header p-0">
                                         <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
                                     </div>
@@ -167,25 +259,743 @@
                                         <p>Descricion breve de alimentos a usar</p>
                                     </div>
                                     <div class="card-footer text-center">
-                                        <a href="" class="btn btn-primary fs-5">Pasos a seguir</a>
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
 
                     </div>
+                </section>
+
+                <section class="m-0 p-0 pb-3" id="desayunos">
+                    <h4 class="text-center pt-3 fs-2 text-decoration-underline separacion">Desayunos</h4>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="m-0 p-0 pb-3" id="pollos">
+                    <h4 class="text-center pt-3 fs-2 text-decoration-underline separacion">Pollos</h4>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="m-0 p-0 pb-3" id="postres">
+                    <h4 class="text-center pt-3 fs-2 text-decoration-underline separacion">Postres</h4>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="m-0 p-0 pb-3" id="Cabra">
+                    <h4 class="text-center pt-3 fs-2 text-decoration-underline separacion">Cabra</h4>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="m-0 p-0 pb-3" id="cordero">
+                    <h4 class="text-center pt-3 fs-2 text-decoration-underline separacion">Cordero</h4>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="m-0 p-0 pb-3" id="miscelaneos">
+                    <h4 class="text-center pt-3 fs-2 text-decoration-underline separacion">Misceláneos</h4>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xl-2 mt-3">
+                                <div class="card mb-4 h-100">
+                                    <div class="card-header p-0">
+                                        <img src="img/recetas/020z181619788503.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>Nombre de la receta</h4>
+                                        <p>Descricion breve de alimentos a usar</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Pasos a seguir</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog text-center justify-content-center">
+                <div class="modal-content bg-segundario">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Receta</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body jus">
+                        <div class="container">
+                        <div class="row ">
+                            <div class="col-12 separacion">
+                                <img src="img/categorias/chicken.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-12 pt-2 separacion">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptate quaerat
+                                    est corrupti numquam. Fugiat iste consequatur, amet maxime debitis possimus
+                                    consectetur praesentium quas maiores molestiae dicta reprehenderit dolore!
+                                    Reiciendis?</p>
+                            </div>
+                        </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
 
     <footer>
 
     </footer>
 
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.js"></script>
+
 </body>
 
 </html>
