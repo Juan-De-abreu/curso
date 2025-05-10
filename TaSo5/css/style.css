@@ -1,0 +1,51 @@
+body{
+    background: #f8c291;
+}
+.bg-principal{
+    background: #fa983a;
+}
+.bg-segundario{
+    background: #f8c291;
+}
+.separacion{
+    border-bottom: black solid 1px;
+}
+section{
+    box-shadow: 0.1em 0.1em 1em black;
+}
+.btn{
+    transition: all ease 0.3s;
+}
+.btn:hover{
+    transform: scale(1.1);
+    box-shadow: 3px 3px 15px black;
+}
+.nav-item{
+    text-align: center;
+    width: 140px;
+    transition: all ease 0.2s;
+    border: solid #86511f00 1px;
+    margin-right: 20px;
+}
+.segundonav{
+    background-color: #f8c291;
+}
+.nav-item:hover{
+    border-radius:5%;
+    border: solid #86511f 1px;
+    box-shadow: #86511f 3px 3px 5px;
+}
+.bg-transparente{
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    border: solid rgba(0, 0, 0, 0.61) 1px;
+}
+.w-85{
+    width:87%;
+}
+.w-10{
+    width: 13%;
+}
+.card{
+    border: 1px solid rgb(165, 161, 161);
+}
